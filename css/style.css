@@ -437,15 +437,18 @@ p {
 /*reviews*/
 
 .reviews{
-	padding:9.6rem 0;
+	padding:1.6rem 0;
 	position:relative;
-	background:#332f30 url("../images/main/reviews-bg.jpg") center no-repeat;
+/*	background:#332f30 url("../images/main/reviews-bg.jpg") center no-repeat;*/
 	margin-bottom: 149px;
 }
 .reviews__item{
 	width:100%;
 	max-width:830px;
-	margin:0 auto
+	margin:0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 .reviews__text{
 	font-size:.94rem;
@@ -455,7 +458,7 @@ p {
 }
 .reviews__author{
 	 width:100%;
-	 margin-top:-51px; /*подниаем аватарку*/
+	 margin-top:-65px; /*подниаем аватарку*/
 	 text-align:center;
 	 position:absolute;
 	 top:100%;
@@ -470,6 +473,10 @@ p {
 	border-radius:50%;
 	border:4px solid #efefef;
 	background: #d7caff;
+}
+.reviews__photo-img {
+	width: 100%;
+	max-width: 100%;
 }
 .reviews__name{
 	margin-bottom:.3rem;
